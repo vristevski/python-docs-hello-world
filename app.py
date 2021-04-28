@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    with urllib.request.urlopen('http://www.brainjar.com/java/host/test.html') as response:
+    with urllib.request.urlopen('http://ise-www.internal.cloudapp.net') as response:
         html = response.read()
     #print(html)
     return html
